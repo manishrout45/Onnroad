@@ -119,7 +119,7 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(false)}
           className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/vehicles" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
         >
-          Courses
+          Vehicles
         </Link>
       </li>
       <li className="w-full">
@@ -128,7 +128,7 @@ const Navbar = () => {
           onClick={() => setIsMenuOpen(false)}
           className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/booking" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
         >
-          Admission
+          Booking
         </Link>
       </li>
       <li className="w-full">
