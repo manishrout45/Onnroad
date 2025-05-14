@@ -115,18 +115,18 @@ const Navbar = () => {
       </li>
       <li className="w-full">
         <Link
-          to="/courses"
+          to="/vehicles"
           onClick={() => setIsMenuOpen(false)}
-          className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/courses" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
+          className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/vehicles" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
         >
           Courses
         </Link>
       </li>
       <li className="w-full">
         <Link
-          to="/admission"
+          to="/booking"
           onClick={() => setIsMenuOpen(false)}
-          className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/admission" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
+          className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/booking" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
         >
           Admission
         </Link>
