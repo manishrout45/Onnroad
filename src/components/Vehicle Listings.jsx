@@ -1,71 +1,152 @@
 // src/pages/Vehicles.jsx
 import React, { useState } from 'react';
-
+import VehicleDetail from '../pages/Vehicle Detail Page';
 const vehicles = [
   {
     id: 1,
-    name: 'Honda Civic',
-    description: 'Comfortable and fuel-efficient sedan.',
+    name: 'Maruti Suzuki Alto',
+    description: 'Comfortable and fuel-efficient Car.',
     price: 50,
-    image: '/images/honda-civic.jpg',
+    image: 'src/assets/images/Vehicles/Cars/alto (2).webp',
     category: 'car',
   },
   {
     id: 2,
-    name: 'Yamaha R15',
-    description: 'Sporty bike with excellent performance.',
-    price: 25,
-    image: '/images/yamaha-r15.jpg',
+    name: 'Royal Enfield',
+    description: 'Royal bike with excellent performance.',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/Royalenfield.webp',
     category: 'bike',
   },
   {
     id: 3,
-    name: 'Toyota Corolla',
-    description: 'Reliable and spacious sedan for family trips.',
-    price: 60,
-    image: '/images/toyota-corolla.jpg',
+    name: 'Ertiga',
+    description: 'Reliable and spacious SUV for family trips.',
+    price: 3000,
+    image: 'src/assets/images/Vehicles/Cars/Ertiga.webp',
     category: 'car',
   },
   {
     id: 4,
-    name: 'Kawasaki Ninja 400',
+    name: 'Bajaj Platina',
     description: 'A fast and agile motorcycle for thrill-seekers.',
-    price: 40,
-    image: '/images/kawasaki-ninja-400.jpg',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/Platina-1.png',
     category: 'bike',
   },
   {
     id: 5,
-    name: 'BMW X5',
+    name: 'Swift Dzire',
     description: 'Luxury SUV with a premium driving experience.',
-    price: 100,
-    image: '/images/bmw-x5.jpg',
+    price: 2500,
+    image: 'src/assets/images/Vehicles/Cars/Swift-dzire.webp',
     category: 'car',
   },
   {
     id: 6,
-    name: 'Harley Davidson Sportster',
+    name: 'Bajaj CT 100',
     description: 'Iconic American motorcycle for cruising.',
-    price: 70,
-    image: '/images/harley-davidson-sportster.jpg',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/Bajaj-CT_100.avif',
     category: 'bike',
   },
   {
     id: 7,
-    name: 'Ford Mustang',
+    name: 'Maruti Celerio',
     description: 'Powerful sports car with great performance.',
-    price: 90,
-    image: '/images/ford-mustang.jpg',
+    price: 2000,
+    image: 'src/assets/images/Vehicles/Cars/Maruti Celerio.webp',
     category: 'car',
   },
   {
     id: 8,
-    name: 'Honda CB500X',
+    name: 'Destini',
     description: 'Adventure bike built for long-distance journeys.',
-    price: 45,
-    image: '/images/honda-cb500x.jpg',
+    price: 400,
+    image: 'src/assets/images/Vehicles/Bike/Destini.webp',
     category: 'bike',
   },
+  {
+    id: 9,
+    name: 'Renault KWID',
+    description: 'Powerful sports car with great performance.',
+    price: 2500,
+    image: 'src/assets/images/Vehicles/Cars/Renault KWID.webp',
+    category: 'car',
+  },
+  {
+    id: 10,
+    name: 'Glamour',
+    description: 'Iconic American motorcycle for cruising.',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/Glamour.avif',
+    category: 'bike',
+  },
+  {
+    id: 11,
+    name: 'Tata Tiago',
+    description: 'Powerful sports car with great performance.',
+    price: 2500,
+    image: 'src/assets/images/Vehicles/Cars/Tata Tiago.webp',
+    category: 'car',
+  },
+  {
+    id: 12,
+    name: 'TVS Jupiter',
+    description: 'Powerful sports car with great performance.',
+    price: 400,
+    image: 'src/assets/images/Vehicles/Bike/TVS-Jupiter-Classic-Edition.jpg',
+    category: 'bike',
+  },
+  {
+    id: 13,
+    name: 'Hero HF Deluxe',
+    description: 'Iconic American motorcycle for cruising.',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/Hero HF Deluxe.webp',
+    category: 'bike',
+  },
+  {
+    id: 14,
+    name: 'Activa',
+    description: 'Powerful sports car with great performance.',
+    price: 400,
+    image: 'src/assets/images/Vehicles/Bike/Activa.webp',
+    category: 'bike',
+  },
+  {
+    id: 15,
+    name: 'Xtreme',
+    description: 'Powerful sports car with great performance.',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/xtreme.webp',
+    category: 'bike',
+  },
+  {
+    id: 16,
+    name: 'Honda Shine',
+    description: 'Iconic American motorcycle for cruising.',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/Honda Shine.webp',
+    category: 'bike',
+  },
+  {
+    id: 17,
+    name: 'TVS_apache',
+    description: 'Iconic American motorcycle for cruising.',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/TVS_apache.jpg',
+    category: 'bike',
+  },
+  {
+    id: 18,
+    name: 'TVS_star-city',
+    description: 'Iconic American motorcycle for cruising.',
+    price: 500,
+    image: 'src/assets/images/Vehicles/Bike/TVS_star-city.webp',
+    category: 'bike',
+  },
+
 ];
 
 const Vehicles = () => {
@@ -78,7 +159,8 @@ const Vehicles = () => {
   };
 
   return (
-    <section className="py-16 bg-gradient-to-br from-gray-100 to-gray-200">
+    <section className="py-16 bg-blue-100">
+     
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">Available Vehicles</h2>
 
@@ -122,13 +204,15 @@ const Vehicles = () => {
               </div>
               <p className="text-gray-600 mb-4">{vehicle.description}</p>
               <div className="flex justify-between items-center">
-                <span className="text-lg font-bold text-blue-600">${vehicle.price}/day</span>
-                <a
-                  href={`/vehicles/${vehicle.id}`}
-                  className="text-sm text-blue-600 hover:underline font-medium"
-                >
-                  View Details →
-                </a>
+                <span className="text-lg font-bold text-blue-600">₹{vehicle.price}/day</span>
+               <a
+              href={`/vehicles/${vehicle.id}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-blue-600 hover:underline font-medium"
+            >
+              View Details →
+            </a>
               </div>
             </div>
           </div>

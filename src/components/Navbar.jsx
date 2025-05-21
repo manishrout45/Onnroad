@@ -15,10 +15,17 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white text-blue-600 p-4 shadow fixed top-0 w-full z-50 border-b-4 border-blue-600">
+    <nav className="bg-white text-blue-600 p-4 shadow-sm fixed top-0 w-full z-50 border-b-4 border-yellow-500">
+
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo Section */}
-        <h1 className="text-xl font-bold">ONNROAD</h1>
+        <div className="h-10 w-auto">
+  <img
+    src="src/assets/logo/onnroad.png"
+    alt="ONNROAD Logo"
+    className="h-16  object-contain"
+  />
+</div>
 
        {/* Mobile Menu Button (Hamburger Icon) */}
 <button
@@ -67,6 +74,11 @@ const Navbar = () => {
                 FAQ
               </Link>
             </li>
+            <li>
+              <Link to="/privacypolicy" className={linkClasses("/privacypolicy")}>
+                T&C
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
@@ -78,9 +90,9 @@ const Navbar = () => {
   <div className="flex flex-col h-full">
     
     {/* Top Section: Logo + Close Button */}
-    <div className="flex items-center justify-between px-6 py-4 shadow-md">
+    <div className="flex items-center justify-between px-6 py-1 shadow-md">
       {/* Logo */}
-      <img src="/logo.png" alt="Logo" className="w-12 h-12 object-contain" />
+      <img src="src/assets/logo/onnroad.png" alt="Logo" className="w-18 h-16 object-contain" />
       
     </div>
 
@@ -138,6 +150,15 @@ const Navbar = () => {
           className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/faq" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
         >
           FAQ
+        </Link>
+      </li>
+      <li className="w-full">
+        <Link
+          to="/privacypolicy"
+          onClick={() => setIsMenuOpen(false)}
+          className={`block w-full py-2 px-4 rounded-md ${location.pathname === "/privacypolicy" ? "bg-blue-600 text-white" : "hover:bg-gray-100"}`}
+        >
+          T&C
         </Link>
       </li>
       <li className="w-full">

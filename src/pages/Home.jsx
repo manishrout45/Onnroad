@@ -15,8 +15,8 @@ const fadeUp = {
 };
 
 const logos = [
-  "logo1.png", "logo2.png", "logo3.png", "logo4.png",
-  "logo5.png", "logo6.png", "logo7.png", "logo8.png",
+  "Honda_logo.png", "Bajaj_logo.png", "Hero_logo.png", "hyundai_logo.png",
+  "Suzuki_logo.png", "TVS_logo.png", "RoyalEnfield_logo.png", "TATA_logo.png",
 ];
 
 
@@ -50,6 +50,45 @@ const Home = () => {
         </div>
       </section>
 
+
+      <section className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-10">
+  {/* Left Text Section */}
+  <div className="col-span-1 flex flex-col justify-start space-y-2">
+    <h4 className="font-semibold text-sm uppercase text-blue-500">Choose Your Place</h4>
+    <h2 className="text-4xl font-bold text-gray-900 leading-tight">
+      Popular <span className="block">Destinations</span>
+    </h2>
+    <p className="text-gray-500">
+  Explore some of the most breathtaking places around Puri and Bhubaneswar. Perfect for your next adventure. 
+  From serene beaches and ancient temples to vibrant markets and cultural landmarks, these destinations offer unforgettable experiences for every kind of traveler.
+</p>
+<p className="text-gray-500 mt-4">
+  Whether you're seeking peaceful retreats in nature, spiritual journeys through historic sites, or lively urban vibes, there's something here to inspire every step of your journey. Start discovering your dream destination today.
+</p>
+
+  </div>
+
+  {/* Destination Cards */}
+  <div className="col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      { name: "Konark", image: "https://cdn.britannica.com/19/251919-050-D3E64798/konark-sun-temple-orissa-india-unesco-heritage-site.jpg" },
+      { name: "Jagannath Temple Puri", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCA6RmNwBS8OnqIeijDl3rEvQ6otqopCsaAg&s" },
+      { name: "Golden Beach Puri", image: "https://assets.odishabytes.com/wp-content/uploads/2020/10/Puri.jpeg" },
+      { name: "Dhauli Giri", image: "https://bhubaneswartourism.in/images/places-to-visit/headers/dhauli-giri-hills-bhubaneswar-tourism-entry-fee-timings-holidays-reviews-header.jpg" },
+      { name: "Lingaraj Temple", image: "https://img-cdn.publive.online/fit-in/1200x675/filters:format(webp)/sambad-english/media/media_files/2025/02/12/9vebIYsNrfHLFBAWABlD.JPG" },
+      { name: "Khandagiri Caves", image: "https://img.veenaworld.com/wp-content/uploads/2021/10/Udaygiri-and-Khandagiri.jpg" },
+    ].map((place, index) => (
+      <div key={index} className="relative overflow-hidden rounded-lg shadow-lg h-56">
+        <img src={place.image} alt={place.name} className="w-full h-full object-cover" />
+        <div className="absolute bottom-4 left-4 text-white text-lg font-semibold">
+          {place.name}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+
       {/* Our Track Record */}
       <section className="py-20 bg-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
@@ -70,31 +109,68 @@ const Home = () => {
         </div>
       </section>
 
+            
+{/* Booking Info Section */}
+<section className="py-16 bg-gray-50">
+  <div className="max-w-5xl mx-auto px-4 ">
+    <h2 className="text-3xl font-bold text-gray-800 mb-6">Hassle-Free Vehicle Rentals</h2>
+    <p className="text-gray-600 text-lg leading-relaxed mb-4">
+      Whether you’re planning a weekend getaway or need a vehicle for daily commuting, we've got you covered.
+      Our easy-to-use platform lets you quickly book bikes or cars at your convenience. Choose from a wide range
+      of vehicles, fill out a simple form, and hit the road in no time!
+    </p>
+    <p className="text-gray-600 text-lg leading-relaxed">
+      With flexible rental plans, competitive prices, and a seamless booking process, renting a vehicle has
+      never been easier. Book online, pick up at your chosen location, and enjoy the ride!
+    </p>
+  </div>
+</section>
+
+
+
       {/* Testimonials */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold text-blue-600 mb-12">What Our Clients Say</h2>
-          <Swiper
-            modules={[Autoplay]}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            loop={true}
-          >
-            {[
-              { name: 'John Doe', image: '/images/client1.jpg', feedback: 'Excellent service and a great selection of vehicles!' },
-              { name: 'Jane Smith', image: '/images/client2.jpg', feedback: 'Affordable prices and friendly staff. Highly recommend!' },
-              { name: 'Mike Johnson', image: '/images/client3.jpg', feedback: 'The booking process was seamless and quick.' },
-            ].map((client, index) => (
-              <SwiperSlide key={index}>
-                <div className="bg-white p-6 rounded-xl shadow-md">
-                  <img src={client.image} alt={client.name} className="w-16 h-16 rounded-full mx-auto mb-4" />
-                  <p className="text-gray-700 italic mb-4">"{client.feedback}"</p>
-                  <h4 className="font-semibold text-blue-500">{client.name}</h4>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </section>
+<section className="py-20 bg-gray-100">
+  <div className="max-w-7xl mx-auto px-4 text-center">
+    <h2 className="text-4xl font-bold text-blue-600 mb-12">What Our Clients Say</h2>
+
+    <Swiper
+      modules={[Autoplay]}
+      autoplay={{ delay: 5000, disableOnInteraction: false }}
+      loop={true}
+      centeredSlides={false}
+      slidesPerView={1}
+      spaceBetween={20}
+      breakpoints={{
+        425: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }}
+      className="testimonial-swiper px-4"
+    >
+      {[
+        { name: 'John Doe', image: 'https://img.freepik.com/free-photo/portrait-interesting-young-man-winter-clothes_158595-914.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740', feedback: 'Excellent service and a great selection of vehicles!' },
+        { name: 'Jane Smith', image: 'https://img.freepik.com/free-vector/minimalist-geometric-judith-s-tiktok-profile-picture_742173-12131.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740', feedback: 'Affordable prices and friendly staff. Highly recommend!' },
+        { name: 'Mike Johnson', image: 'https://img.freepik.com/free-photo/serious-man-looking-camera_23-2147799044.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740', feedback: 'The booking process was seamless and quick also have Effortless.' },
+        { name: 'Emily Davis', image: 'https://img.freepik.com/free-vector/doodle-creative-gaming-profile-picture_1421494-148.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740', feedback: 'Super reliable vehicles and fast booking!' },
+      ].map((client, index) => (
+        <SwiperSlide key={index}>
+          <div className="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300 h-[350px] w-full max-w-sm mx-auto">
+            <img src={client.image} alt={client.name} className="w-16 h-16 rounded-full mx-auto mb-4" />
+            <p className="text-gray-700 italic mb-4">{`"${client.feedback}"`}</p>
+            <h4 className="font-semibold text-blue-500">{client.name}</h4>
+          </div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  </div>
+</section>
+
        {/* Our Partners - Swiper Slider */}
 <motion.section
   className="max-w-7xl mx-auto py-20 px-6"
@@ -125,13 +201,12 @@ const Home = () => {
         <img
           src={`/images/${logo}`}
           alt={`Partner ${index + 1}`}
-          className="h-12 grayscale hover:grayscale-0 transition duration-300"
+          className="h-24 grayscale hover:grayscale-0 transition duration-300"
         />
       </SwiperSlide>
     ))}
   </Swiper>
 </motion.section>
-
 
 
 
@@ -153,6 +228,21 @@ const Home = () => {
     </a>
   </motion.div>
 </motion.section>
+{/* Floating IMP Button with 'Click Here' label */}
+<div className="fixed bottom-6 right-6 z-50 flex flex-col items-center space-y-1">
+  <span className="text-md text-yellow-500 font-bold animate-bounce ">
+    Click Here
+  </span>
+  <a
+    href="/privacypolicy"
+    className="flex items-center justify-center bg-red-600 text-yellow-400 font-bold rounded-full w-16 h-16 shadow-lg hover:bg-red-700 transition-all duration-300 text-lg border-4 border-yellow-400"
+    title="Important"
+  >
+    IMP
+  </a>
+</div>
+
+
 
     </>
   );

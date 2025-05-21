@@ -49,37 +49,50 @@ const Booking = () => {
         className="bg-cover bg-center h-72 flex items-center justify-center text-white"
         style={{
           backgroundImage:
-            "url('https://img.freepik.com/free-vector/person-taxi-app-phone-illustration_23-2148498123.jpg')",
+            "url('https://img.freepik.com/free-photo/rainbow-end-road-landscape_23-2151596648.jpg?uid=R162123361&ga=GA1.1.1312737827.1743758138&semt=ais_hybrid&w=740')",
         }}
       >
+        
         <h1 className="text-4xl font-bold drop-shadow-lg" data-aos="fade-down">
           Book Your Ride
         </h1>
       </div>
 
       {/* Step Section */}
-      <section className="py-16 bg-white" data-aos="fade-up">
-        <div className="container mx-auto px-4 text-center max-w-4xl">
-          <h2 className="text-2xl font-bold mb-8">How It Works</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
-              <div className="text-blue-600 text-4xl mb-4">🚗</div>
-              <h3 className="font-semibold text-lg mb-2">Choose a Vehicle</h3>
-              <p className="text-gray-600">Browse our listings and pick the perfect car for your trip.</p>
-            </div>
-            <div>
-              <div className="text-blue-600 text-4xl mb-4">📝</div>
-              <h3 className="font-semibold text-lg mb-2">Fill Booking Form</h3>
-              <p className="text-gray-600">Enter your details, rental dates, and preferences.</p>
-            </div>
-            <div>
-              <div className="text-blue-600 text-4xl mb-4">✅</div>
-              <h3 className="font-semibold text-lg mb-2">Confirm & Ride</h3>
-              <p className="text-gray-600">We’ll confirm your booking and you’re ready to go!</p>
-            </div>
-          </div>
+<section className="py-20 bg-white" data-aos="fade-up">
+  <div className="container mx-auto px-4 max-w-6xl">
+    <h2 className="text-3xl font-extrabold text-center mb-12 text-gray-800">How It Works</h2>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {/* Step 1 */}
+      <div className="bg-gray-50 rounded-2xl shadow-md p-8 hover:bg-green-100 transition-all duration-300">
+        <div className="w-16 h-16 flex items-center justify-center bg-green-200 text-green-700 text-3xl rounded-full mx-auto mb-6">
+          🚗
         </div>
-      </section>
+        <h3 className="text-xl font-semibold text-center mb-3">Choose a Vehicle</h3>
+        <p className="text-gray-600 text-center">Browse our listings and pick the perfect car for your trip.</p>
+      </div>
+      
+      {/* Step 2 */}
+      <div className="bg-gray-50 rounded-2xl shadow-md p-8 hover:bg-yellow-100 transition-all duration-300">
+        <div className="w-16 h-16 flex items-center justify-center bg-yellow-200 text-yellow-700 text-3xl rounded-full mx-auto mb-6">
+          📝
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">Fill Booking Form</h3>
+        <p className="text-gray-600 text-center">Enter your details, rental dates, and preferences.</p>
+      </div>
+
+      {/* Step 3 */}
+      <div className="bg-gray-50 rounded-2xl shadow-md p-8 hover:bg-blue-100 transition-all duration-300">
+        <div className="w-16 h-16 flex items-center justify-center bg-blue-200 text-blue-700 text-3xl rounded-full mx-auto mb-6">
+          ✅
+        </div>
+        <h3 className="text-xl font-semibold text-center mb-3">Confirm & Ride</h3>
+        <p className="text-gray-600 text-center">We’ll confirm your booking and you’re ready to go!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Booking Form */}
       <section className="py-16" data-aos="fade-up">
@@ -194,16 +207,16 @@ const Booking = () => {
           </div>
 
           {/* Contact Info */}
-          <div className="flex-1 bg-blue-50 p-8 rounded-lg shadow-sm flex flex-col justify-between">
+          <div className="flex-1 bg-yellow-100 p-8 rounded-lg shadow-sm flex flex-col justify-between">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-blue-800">Need Help?</h3>
               <p className="text-gray-700 mb-6">
                 If you have any questions or need assistance with your booking, feel free to contact us.
               </p>
               <ul className="space-y-4 text-gray-700">
-                <li>📧 <strong>Email:</strong> support@yourcarrental.com</li>
-                <li>☎️ <strong>Phone:</strong> +1 (800) 123-4567</li>
-                <li>📍 <strong>Location:</strong> 123 Main St, New York, NY</li>
+                <li>📧 <strong>Email:</strong> onnroad2016@gmail.com</li>
+                <li>☎️ <strong>Phone:</strong> +91 768 283 7771</li>
+                <li>📍 <strong>Location:</strong> Puri, Odisha, 75____</li>
               </ul>
             </div>
 

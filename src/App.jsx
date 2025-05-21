@@ -11,6 +11,7 @@ import FAQ from "./pages/FAQ";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   useEffect(() => {
@@ -23,10 +24,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/vehicleDetail" element={<VehicleDetail />} />
+        <Route path="/vehicles/:id" element={<VehicleDetail />} />
         <Route path="/vehicles" element={<Vehicles />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         <Route path="/booking" element={<Booking />} />
       </Routes>
       <Footer />
