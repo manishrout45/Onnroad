@@ -7,7 +7,7 @@ const vehicles = [
     name: 'Maruti Suzuki Alto',
     description: 'Comfortable and fuel-efficient Car.',
     price: 50,
-    image: './src/assets/images/Vehicles/Cars/alto (2).webp',
+    image: '/assets/images/Vehicles/Cars/alto (2).webp',
     category: 'car',
   },
   {
@@ -15,7 +15,7 @@ const vehicles = [
     name: 'Royal Enfield',
     description: 'Royal bike with excellent performance.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/Royalenfield.webp',
+    image: '/assets/images/Vehicles/Bike/Royalenfield.webp',
     category: 'bike',
   },
   {
@@ -23,7 +23,7 @@ const vehicles = [
     name: 'Ertiga',
     description: 'Reliable and spacious SUV for family trips.',
     price: 3000,
-    image: './src/assets/images/Vehicles/Cars/Ertiga.webp',
+    image: '/assets/images/Vehicles/Cars/Ertiga.webp',
     category: 'car',
   },
   {
@@ -31,7 +31,7 @@ const vehicles = [
     name: 'Bajaj Platina',
     description: 'A fast and agile motorcycle for thrill-seekers.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/Platina-1.png',
+    image: '/assets/images/Vehicles/Bike/Platina-1.png',
     category: 'bike',
   },
   {
@@ -39,7 +39,7 @@ const vehicles = [
     name: 'Swift Dzire',
     description: 'Luxury SUV with a premium driving experience.',
     price: 2500,
-    image: './src/assets/images/Vehicles/Cars/Swift-dzire.webp',
+    image: '/assets/images/Vehicles/Cars/Swift-dzire.webp',
     category: 'car',
   },
   {
@@ -47,7 +47,7 @@ const vehicles = [
     name: 'Bajaj CT 100',
     description: 'Iconic American motorcycle for cruising.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/Bajaj-CT_100.avif',
+    image: '/assets/images/Vehicles/Bike/Bajaj-CT_100.avif',
     category: 'bike',
   },
   {
@@ -55,7 +55,7 @@ const vehicles = [
     name: 'Maruti Celerio',
     description: 'Powerful sports car with great performance.',
     price: 2000,
-    image: './src/assets/images/Vehicles/Cars/Maruti Celerio.webp',
+    image: '/assets/images/Vehicles/Cars/Maruti Celerio.webp',
     category: 'car',
   },
   {
@@ -63,7 +63,7 @@ const vehicles = [
     name: 'Destini',
     description: 'Adventure bike built for long-distance journeys.',
     price: 400,
-    image: './src/assets/images/Vehicles/Bike/Destini.webp',
+    image: '/assets/images/Vehicles/Bike/Destini.webp',
     category: 'bike',
   },
   {
@@ -71,7 +71,7 @@ const vehicles = [
     name: 'Renault KWID',
     description: 'Powerful sports car with great performance.',
     price: 2500,
-    image: './src/assets/images/Vehicles/Cars/Renault KWID.webp',
+    image: '/assets/images/Vehicles/Cars/Renault KWID.webp',
     category: 'car',
   },
   {
@@ -79,7 +79,7 @@ const vehicles = [
     name: 'Glamour',
     description: 'Iconic American motorcycle for cruising.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/Glamour.avif',
+    image: '/assets/images/Vehicles/Bike/Glamour.avif',
     category: 'bike',
   },
   {
@@ -87,7 +87,7 @@ const vehicles = [
     name: 'Tata Tiago',
     description: 'Powerful sports car with great performance.',
     price: 2500,
-    image: './src/assets/images/Vehicles/Cars/Tata Tiago.webp',
+    image: '/assets/images/Vehicles/Cars/Tata Tiago.webp',
     category: 'car',
   },
   {
@@ -95,7 +95,7 @@ const vehicles = [
     name: 'TVS Jupiter',
     description: 'Powerful sports car with great performance.',
     price: 400,
-    image: './src/assets/images/Vehicles/Bike/TVS-Jupiter-Classic-Edition.jpg',
+    image: '/assets/images/Vehicles/Bike/TVS-Jupiter-Classic-Edition.jpg',
     category: 'bike',
   },
   {
@@ -103,7 +103,7 @@ const vehicles = [
     name: 'Hero HF Deluxe',
     description: 'Iconic American motorcycle for cruising.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/Hero HF Deluxe.webp',
+    image: '/assets/images/Vehicles/Bike/Hero HF Deluxe.webp',
     category: 'bike',
   },
   {
@@ -111,7 +111,7 @@ const vehicles = [
     name: 'Activa',
     description: 'Powerful sports car with great performance.',
     price: 400,
-    image: './src/assets/images/Vehicles/Bike/Activa.webp',
+    image: '/assets/images/Vehicles/Bike/Activa.webp',
     category: 'bike',
   },
   {
@@ -119,7 +119,7 @@ const vehicles = [
     name: 'Xtreme',
     description: 'Powerful sports car with great performance.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/xtreme.webp',
+    image: '/assets/images/Vehicles/Bike/xtreme.webp',
     category: 'bike',
   },
   {
@@ -127,7 +127,7 @@ const vehicles = [
     name: 'Honda Shine',
     description: 'Iconic American motorcycle for cruising.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/Honda Shine.webp',
+    image: '/assets/images/Vehicles/Bike/Honda Shine.webp',
     category: 'bike',
   },
   {
@@ -135,7 +135,7 @@ const vehicles = [
     name: 'TVS_apache',
     description: 'Iconic American motorcycle for cruising.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/TVS_apache.jpg',
+    image: '/assets/images/Vehicles/Bike/TVS_apache.jpg',
     category: 'bike',
   },
   {
@@ -143,7 +143,7 @@ const vehicles = [
     name: 'TVS_star-city',
     description: 'Iconic American motorcycle for cruising.',
     price: 500,
-    image: './src/assets/images/Vehicles/Bike/TVS_star-city.webp',
+    image: '/assets/images/Vehicles/Bike/TVS_star-city.webp',
     category: 'bike',
   },
 

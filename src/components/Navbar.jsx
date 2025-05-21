@@ -21,7 +21,7 @@ const Navbar = () => {
         {/* Logo Section */}
         <div className="h-10 w-auto">
   <img
-    src="./src/assets/logo/onnroad.png"
+    src="/assets/images/logo/onnroad.png"
     alt="ONNROAD Logo"
     className="h-16  object-contain"
   />
@@ -92,7 +92,7 @@ const Navbar = () => {
     {/* Top Section: Logo + Close Button */}
     <div className="flex items-center justify-between px-6 py-1 shadow-md">
       {/* Logo */}
-      <img src="./src/assets/logo/onnroad.png" alt="Logo" className="w-18 h-16 object-contain" />
+      <img src="/assets/images/logo/onnroad.png" alt="Logo" className="w-18 h-16 object-contain" />
       
     </div>
 

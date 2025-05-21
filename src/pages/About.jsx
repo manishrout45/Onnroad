@@ -173,7 +173,7 @@ const About = () => {
             </div>
             <div>
               <p className="text-sm text-gray-400">BOOK TOUR NOW</p>
-              <p className="text-xl font-semibold text-gray-900">666-888–0000</p>
+              <p className="text-xl font-semibold text-gray-900">768-283-7771</p>
             </div>
           </div>
         </div>

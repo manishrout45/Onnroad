@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="space-y-4">
           <div className="flex justify-center md:justify-start">
             <img
-              src="./src/assets/logo/onnroad_light.png" // Replace with the correct path to your logo image
+              src="/assets/images/logo/onnroad_light.png" // Replace with the correct path to your logo image
               alt="Onnroad Logo"
               className="w-48 h-18 object-contain "
             />
