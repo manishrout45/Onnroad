@@ -57,7 +57,7 @@ const HeroSection = () => {
         {/* Car Image with Animation */}
         <div className="relative group flex justify-center items-center">
           <img
-  src="/src/assets/images/view-3d-car-removebg-preview.png"
+  src="./src/assets/images/view-3d-car-removebg-preview.png"
   alt="Luxury Sports Car"
   className="w-full max-w-[44rem] transform transition-transform duration-500 group-hover:rotate-[-6deg] group-hover:scale-105 drop-shadow-[0_20px_45px_rgba(0,0,0,0.5)] animate-float"
 />
