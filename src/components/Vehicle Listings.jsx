@@ -135,7 +135,7 @@ const vehicles = [
     name: 'TVS_apache',
     description: 'Iconic American motorcycle for cruising.',
     price: 500,
-    image: 'src/assets/images/Vehicles/Bike/TVS_apache.jpg',
+    image: '/src/assets/images/Vehicles/Bike/TVS_apache.jpg',
     category: 'bike',
   },
   {
